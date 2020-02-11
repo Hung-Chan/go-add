@@ -3,3 +3,13 @@ language: go
 go:
   - 1.13.x
   - master
+
+script:
+  - go test ./...
+
+notifications:
+  email:
+    recipients:
+      - chted119@gmail.com
+    on_success: change
+    on_failure: always
