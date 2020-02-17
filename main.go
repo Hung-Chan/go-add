@@ -15,6 +15,6 @@ func main() {
 
 // add .
 func add(num1, num2 int) int {
-	fmt.Println("add")
+	fmt.Println("addtest")
 	return num1 + num2
 }
