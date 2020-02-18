@@ -4,8 +4,8 @@ kind: pipeline
 name: go-add
 
 platform:
-  os: linux
-  arch: amd
+  os: windows
+  arch: amd64
 
 steps:
 - name: build
