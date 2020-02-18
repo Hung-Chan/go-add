@@ -10,9 +10,12 @@ steps:
     path: /go
   commands:
   - go test
+  when:
+    branch:
+      - dev
 
 - name: build
-  image: golang
+  image: golang2
   volumes:
   - name: deps
     path: /go
