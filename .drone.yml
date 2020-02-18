@@ -9,7 +9,7 @@ platform:
 
 steps:
 - name: build
-  # image: golang:1.13-alpine
+  image: golang:1.13-alpine
   commands:
     - echo "test1"
     - echo "test23"
