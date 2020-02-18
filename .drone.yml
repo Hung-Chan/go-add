@@ -1,6 +1,6 @@
 ---
 kind: pipeline
-type: docker
+# type: docker
 name: go-add
 
 platform:
@@ -12,5 +12,6 @@ steps:
   image: golang:1.13-alpine
   commands:
     - echo "test1"
+    - echo "test2"
 
 
