@@ -1,18 +1,11 @@
----
 kind: pipeline
-type: docker
-name: go-add
-
-platform:
-  os: linux
-  arch: arm
+name: default
 
 steps:
-- name: build
-  image: golang:1.13-alpine
+- name: test
+  image: golang
   commands:
-    - echo "test1"
-    - echo "test2"
-
+  - go test
+  - go build
 
 
