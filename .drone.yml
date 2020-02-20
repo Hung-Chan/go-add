@@ -25,7 +25,7 @@ steps:
 - name: deploy
   image: appleboy/drone-ssh
   volumes:
-    - ~/.ssh/id_rsa:/.ssh/id_rsa
+    - '~/.ssh/id_rsa:/.ssh/id_rsa'
   settings:
     host: 127.0.0.1
     username:
@@ -33,8 +33,8 @@ steps:
     password:
       from_secret: docker_password
     port: 9654
-
-    key_path: /.ssh/id_rsa
+    key:
+      from_secret: drone_key
     script:
       - echo hello
       - echo world
