@@ -28,10 +28,8 @@ steps:
   #   - '~/.ssh/id_rsa:/.ssh/id_rsa'
   settings:
     host: 127.0.0.1
-    username:
-      from_secret: docker_account
-    password:
-      from_secret: docker_password
+    username: root
+    password: password
     port: 9654
     key:
       from_secret: drone_key
