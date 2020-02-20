@@ -31,7 +31,7 @@ steps:
     username: root
     # password: password
     port: 9654
-    key:
+    ssh_key:
       from_secret: drone_key
     script:
       - echo hello
