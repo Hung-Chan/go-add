@@ -26,13 +26,13 @@ steps:
   image: appleboy/drone-ssh
   volumes:
     - name: key
-      path: ~/.ssh
+      path: /root/.ssh/id_rsa
   settings:
     host: 10.159.5.115
     ssh_username: root
     ssh_password: password
     port: 9654
-    key_path: ~/.ssh/id_rsa
+    key_path: /root/.ssh/id_rsa
     script:
       - echo hello
       - echo world
@@ -43,6 +43,6 @@ volumes:
   temp: {}
 - name: key
   host:
-    path: ~/.ssh
+    path: /root/.ssh/id_rsa
 
 
