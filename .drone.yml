@@ -42,6 +42,6 @@ volumes:
 - name: deps
   temp: {}
 - name: key
-  host: "~/.ssh"
+  host: ~/.ssh
 
 
