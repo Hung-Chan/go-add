@@ -24,15 +24,15 @@ steps:
 
 - name: deploy
   image: appleboy/drone-ssh
-  # volumes:
-  #   - '~/.ssh/id_rsa:/.ssh/id_rsa'
+  volumes:
+    - name: key
+      path: ~/.ssh
   settings:
     host: 10.159.5.115
-    username: root
-    # password: password
+    ssh_username: root
+    ssh_password: password
     port: 9654
-    ssh_key:
-      from_secret: drone_key
+    key_path: ~/.ssh/id_rsa
     script:
       - echo hello
       - echo world
@@ -41,5 +41,7 @@ steps:
 volumes:
 - name: deps
   temp: {}
+- name: key
+  host: ~/.ssh
 
 
