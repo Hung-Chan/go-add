@@ -32,7 +32,7 @@ steps:
       from_secret: docker_password
     port: 9654
     key:
-      from_secret: ssh_key
+      from_secret: drone_key
     script:
       - echo hello
       - echo world
