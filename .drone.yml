@@ -26,12 +26,17 @@ steps:
   image: appleboy/drone-ssh
   settings:
     host: 127.0.0.1
-    username: root
-    password: password
+    username:
+      from_secret: docker_account
+    password:
+      from_secret: docker_password
     port: 9654
+    key:
+      from_secret: ssh_key
     script:
       - echo hello
       - echo world
+      - cd /home/
 
 volumes:
 - name: deps
