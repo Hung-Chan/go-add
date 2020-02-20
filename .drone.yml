@@ -31,8 +31,7 @@ steps:
     password:
       from_secret: docker_password
     port: 9654
-    key:
-      from_secret: drone_key
+    key_path: ~/.ssh/id_rsa
     script:
       - echo hello
       - echo world
