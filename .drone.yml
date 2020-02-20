@@ -24,8 +24,8 @@ steps:
 
 - name: deploy
   image: appleboy/drone-ssh
-  volumes:
-    - '~/.ssh/id_rsa:/.ssh/id_rsa'
+  # volumes:
+  #   - '~/.ssh/id_rsa:/.ssh/id_rsa'
   settings:
     host: 127.0.0.1
     username:
