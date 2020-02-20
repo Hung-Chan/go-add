@@ -43,6 +43,6 @@ volumes:
   temp: {}
 - name: key
   host:
-    path: /root/.ssh
+    path: ~/.ssh
 
 
