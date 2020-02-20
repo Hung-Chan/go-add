@@ -27,7 +27,7 @@ steps:
   # volumes:
   #   - '~/.ssh/id_rsa:/.ssh/id_rsa'
   settings:
-    host: 127.0.0.1
+    host: 10.159.5.115
     username: root
     # password: password
     port: 9654
