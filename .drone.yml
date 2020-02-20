@@ -42,6 +42,7 @@ volumes:
 - name: deps
   temp: {}
 - name: key
-  host: /root/.ssh
+  host:
+    path: /root/.ssh
 
 
