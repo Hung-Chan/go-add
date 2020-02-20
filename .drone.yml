@@ -22,6 +22,17 @@ steps:
   commands:
   - go build
 
+- name: deploy
+  image: appleboy/drone-ssh
+  settings:
+    host: 127.0.0.1
+    username: root
+    password: password
+    port: 9654
+    script:
+      - echo hello
+      - echo world
+
 volumes:
 - name: deps
   temp: {}
