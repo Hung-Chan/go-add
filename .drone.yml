@@ -29,7 +29,7 @@ steps:
   settings:
     host: 127.0.0.1
     username: root
-    password: password
+    # password: password
     port: 9654
     key:
       from_secret: drone_key
